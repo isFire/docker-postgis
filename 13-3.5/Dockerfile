@@ -18,6 +18,7 @@ RUN apt-get update \
            #   fix: https://github.com/postgis/docker-postgis/issues/307
            ca-certificates \
            \
+           postgresql-13-pgrouting \
            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR=$POSTGIS_VERSION \
            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts \
       && rm -rf /var/lib/apt/lists/*
